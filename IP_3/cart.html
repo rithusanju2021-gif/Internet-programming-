@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mens wear</title>
+  <link rel="stylesheet" href="style.css">  
+  <style>
+    #cartPage {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    #cartPage h1 {
+      text-align: center;
+      color: #222;
+    }
+    #cartPage h2 {
+      color: #444;
+    }
+    #grandTotal {
+      text-align: right;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Massive Mens Wear</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="items.html">Items</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <h1 style="text-align:center; color:#222; margin-top:20px;">Welcome to Massive Menswear</h1>
+  <h1 style="text-align:center;">My Online Store</h1>
+  <hr>
+  <h2 style="text-align:center;">Products</h2>
+  <div id="cartPage">
+    <h1>Shopping Cart</h1>
+    <table border="2">
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td id="product"></td>
+        <td id="price"></td>
+        <td>1</td>
+        <td id="total"></td>
+      </tr>
+    </table>
+    <h2 id="grandTotal"></h2>
+    <br>
+    <h2>Checkout</h2>
+    <form>
+      <label>Name</label><br>
+      <input type="text" required><br><br>
+      <label>Email</label><br>
+      <input type="email" required><br><br>
+      <label>Address</label><br>
+      <textarea required></textarea><br><br>
+      <label>Payment</label><br>
+      <select>
+        <option>Credit Card</option>
+        <option>Debit Card</option>
+        <option>Cash on Delivery</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Place Order">
+    </form>
+    <br>
+  </div>
+</body>
+</html>
